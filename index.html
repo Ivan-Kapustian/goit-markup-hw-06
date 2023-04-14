@@ -435,13 +435,71 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close link">
           <svg class="close-icon">
             <use href="./images/symbol-defs.svg#icon-Vector"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label for="username">
+            <span class="modal-placeholder">Name</span>
+
+            <input
+              type="text"
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+              required
+            />
+            <svg class="icon-body modal-icon">
+              <use href="./images/symbol-defs.svg#icon-body"></use>
+            </svg>
+          </label>
+          <label for="user-phone">
+            <span class="modal-placeholder">Phone</span>
+
+            <input
+              type="tel"
+              class="modal-input"
+              id="user-phone"
+              name="user-phone"
+              required
+            />
+            <svg class="icon-phone modal-icon">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label for="user-email">
+            <span class="modal-placeholder">Email</span>
+
+            <input
+              type="email"
+              class="modal-input"
+              id="user-email"
+              name="user-email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <svg class="icon-email modal-icon">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label for="user-text">
+            <span class="modal-placeholder">Comment</span>
+
+            <textarea
+              type="email"
+              class="modal-textarea"
+              id="user-text"
+              name="user-text "
+              placeholder="Text input"
+              required
+            ></textarea>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
