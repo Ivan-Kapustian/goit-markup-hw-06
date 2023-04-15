@@ -287,7 +287,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-div">
           <p class="social-media">Social Media</p>
           <ul class="social">
             <li class="social-item">
@@ -319,6 +319,30 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe-text">Subscribe</p>
+          <form action="#">
+            <div class="subscribe-input">
+              <label for="useremail">
+                <input
+                  type="email"
+                  class="footer-input"
+                  id="useremail"
+                  name="useremail"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-btn">
+                Subscribe
+                <svg class="icon-subscribe">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
