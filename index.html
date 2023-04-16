@@ -435,26 +435,24 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
-          <form action="#">
-            <div class="subscribe-input">
-              <label for="useremail">
-                <input
-                  type="email"
-                  class="footer-input"
-                  id="useremail"
-                  name="useremail"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  required
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="footer-btn">
-                Subscribe
-                <svg class="icon-subscribe">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form action="#" class="subscribe-input">
+            <label for="useremail">
+              <input
+                type="email"
+                class="footer-input"
+                id="useremail"
+                name="useremail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="icon-subscribe">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -468,7 +466,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label for="user-name">
+          <label for="user-name" class="modal-label">
             <span class="modal-placeholder">Name</span>
 
             <input
@@ -479,10 +477,14 @@
               required
             />
             <svg class="icon-body modal-icon">
-              <use href="./images/symbol-defs.svg#icon-body"></use>
+              <use
+                href="./images/symbol-defs.svg#icon-body"
+                width="18px"
+                height="18px"
+              ></use>
             </svg>
           </label>
-          <label for="user-phone">
+          <label for="user-phone" class="modal-label">
             <span class="modal-placeholder">Phone</span>
 
             <input
@@ -493,12 +495,15 @@
               required
             />
             <svg class="icon-phone modal-icon">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
+              <use
+                href="./images/symbol-defs.svg#icon-phone"
+                width="18px"
+                height="24px"
+              ></use>
             </svg>
           </label>
-          <label for="user-email">
+          <label for="user-email" class="modal-label">
             <span class="modal-placeholder">Email</span>
-
             <input
               type="email"
               class="modal-input"
@@ -508,21 +513,23 @@
               required
             />
             <svg class="icon-email modal-icon">
-              <use href="./images/symbol-defs.svg#icon-email"></use>
+              <use
+                href="./images/symbol-defs.svg#icon-email"
+                width="18px"
+                height="24px"
+              ></use>
             </svg>
           </label>
-          <label for="user-text">
+          <label for="user-text" class="textarea-label">
             <span class="modal-placeholder">Comment</span>
-
             <textarea
               class="modal-textarea"
               id="user-text"
-              name="user-text "
+              name="user-text"
               placeholder="Text input"
               required
             ></textarea>
           </label>
-
           <input
             type="checkbox"
             class="checkbox visually-hidden"
